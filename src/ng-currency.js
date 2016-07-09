@@ -165,7 +165,6 @@ angular.module('ng-currency', [])
                     }
                     else
                     {
-                        //viewValue = parseFloat(viewValue).toFixed(scope.fraction);
                         viewValue = $filter('number')(parseFloat(viewValue), scope.fraction);
                     }
                     ngModel.$setViewValue(viewValue);
